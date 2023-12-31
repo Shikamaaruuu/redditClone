@@ -1,0 +1,49 @@
+-D would be added as dev dependencies
+Typescript -  running in watch mode will compile the Typescript code to Js and will keep the js code ready whenever changes are made and this will decrease execution time
+An ORM, or Object Relational Mapper, is a piece of software designed to translate between the data representations used by databases and those used in object-oriented programming.
+Typescript deals with types so we are exporting the object as the type of init 
+
+// const post = emFork.create(Post, { // <-- use the fork instead of global `orm.em`
+    //     title: "my first post",
+    // }); --> Commenting out as post is entered into DB everytime it runs
+    // await emFork.persistAndFlush(post); // <-- use the fork instead of global 
+
+GraphQL -  front end describes what data they need and in which format they need it and backend sends the response in that format
+
+GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools.
+ 
+Your GraphQL server uses a schema to describe the shape of your available data. This schema defines a hierarchy of types with fields that are populated from your back-end data stores. The schema also specifies exactly which queries and mutations are available for clients to execute.
+
+Send a GraphQL query to your API and get exactly what you need, nothing more and nothing less. GraphQL queries always return predictable results.
+
+GraphQL queries access not just the properties of one resource but also smoothly follow references between them. While typical REST APIs require loading from multiple URLs, GraphQL APIs get all the data your app needs in a single request
+
+When we run a migration it compares itself with the database and will add new schemas which aren't there in db or update the old ones
+
+Promise - A Promise is a proxy for a value not necessarily known when the promise is created. It allows you to associate handlers with an asynchronous action's eventual success value or failure reason. This lets asynchronous methods return values like synchronous methods: instead of immediately returning the final value, the asynchronous method returns a promise to supply the value at some point in the future.
+
+A Promise is in one of these states:
+
+pending: initial state, neither fulfilled nor rejected.
+fulfilled: meaning that the operation was completed successfully.
+rejected: meaning that the operation failed.
+
+to make sure the user stays logged in while using the app we use cookies with session library 
+
+order of running middleware is important 
+
+The introduction of the SameSite attribute (defined in RFC6265bis) allows you to declare if your cookie should be restricted to a first-party or same-site context. It's helpful to understand exactly what 'site' means here. The site is the combination of the domain suffix and the part of the domain just before it. For example, the www.web.dev domain is part of the web.dev site.
+
+The lax value provides a reasonable balance between security and usability for websites that want to maintain user’s logged-in session after the user arrives from an external link. In the above GitHub scenario, the session cookie would be allowed when following a regular link from an external website while blocking it in CSRF-prone request methods (e.g. POST).
+
+sessions:
+ req.session.userId = user.id -> sends the data {userId:1} to redis
+ redis is a key value store 
+ sess:jneaefjkbwjk -> this is the key which will store the data
+ now a cookie which looks like this uafhnjabsfkbkafboauno is a signed version of the key 
+ when user makes a request the cookie id will be sent to server
+ server decrypts the signature on the cookie to obtain session key 
+ next a request to redis is made with the key value 
+
+
+Cross-origin resource sharing (CORS) is a mechanism for integrating applications. CORS defines a way for client web applications that are loaded in one domain to interact with resources in a different domain.

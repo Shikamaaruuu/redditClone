@@ -1,0 +1,26 @@
+tsx extension is for typescript react files
+
+we can configure our own snippets; ctrl+shift+p for command palette
+
+We can use wrappers so as to apply common properties for all children inside wrapper
+
+An interface allows a new type to be created with a name and structure. The structure includes all the properties and methods that the type has without any implementation.
+
+Interfaces don’t exist in JavaScript; they are only used by the TypeScript compiler type checking process.
+
+React.js Blueprint Suggest Props interface is a type definition for the props (short for properties) that a React component expects to receive. It is used to specify the types and the required values for the props that a component will accept. The Props interface is defined as an object type with a set of key-value pairs, where the key is the name of the prop and the value is the type of the prop. It is often used in combination with the React.FC type, which is a generic type that represents a functional component in React.
+
+The Props interface is helpful in documenting the expected props for a component and for type-checking the props to ensure that they are being used correctly. It can also help to catch bugs and prevent type errors during development.
+
+Hooks are functions that let you “hook into” React state and lifecycle features from function components. Hooks don't work inside classes — they let you use React without classes
+
+For communication with schema:
+    We write the query or mutation in graphql folder and generate the hooks which will be used 
+
+https://formidable.com/open-source/urql/docs/graphcache/cache-updates/
+
+Server-side rendering (SSR) is a technique that renders a web page on the server rather than in the browser. When a website's JavaScript is rendered on the website's server, a fully rendered page is sent to the client and the client's JavaScript bundle engages and enables the Single Page Application framework to operate.
+
+When doing ssr the page loads after all the resources are rendered on the server side. This will help in better SEO 
+
+ssr in nextjs: once we load a page the pages loaded next will not be server side rendered
